@@ -114,3 +114,42 @@ body {
 .home__image {
   width: 100%;
 }
+
+/* Food card */
+.menu {
+  display: flex;
+  height: auto;
+  max-height: 580px;
+  overflow-x: scroll;
+}
+
+.food-card {
+  background: lightblue;
+  min-width: 280px;
+  height: 90%;
+  padding: .5em;
+  margin: 1em .5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card__img {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #a9a9;
+}
+
+.food-card__title {
+  font-size: 1.45em;
+  text-transform: capitalize;
+  text-align: center;
+  min-height: 83px;
+}
+
+.food-card__description {
+  font-size: 1.1em;
+  line-height: 1.3;
+  color: var(--light-brown, #714136);
+  margin-left: 1rem;
+}
