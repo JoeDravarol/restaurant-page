@@ -62,3 +62,28 @@ body {
   min-width: 110px;
   max-width: 130px;
 }
+
+/* Main Container */
+.main-container {
+  display: flex;
+}
+
+/* Navbar */
+.primary-nav {
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 50px;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+.primary-nav__ul {
+  height: 100%;
+  width: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
