@@ -16,6 +16,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header */
 .main-header {
   padding: 1em;
@@ -152,4 +156,62 @@ body {
   line-height: 1.3;
   color: var(--light-brown, #714136);
   margin-left: 1rem;
+}
+
+/* Cafe Info */
+.cafe-info {
+  padding: 1em;
+}
+
+.cafe-info__image {
+  width: 100%;
+}
+
+.location,
+.opening-hours,
+.contact {
+  width: 100%;
+}
+
+.location__title,
+.opening-hours__title,
+.contact__title {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: .65em;
+}
+
+.location__address,
+.opening-hours__list-time {
+  font-size: 1.25em;
+  margin: .5em .5em;
+}
+
+.opening-hours__day {
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__btn {
+  min-width: 250px;
+  width: 100%;
+  max-width: 300px;
+  padding: .75rem;
+  border: 1px solid #a9a9a9;
+  border-radius: 6px;
+  font-size: 1em;
+  margin: .25rem;
+  color: var(--dark-brown, #50342b);
+}
+
+.contact-form__textarea {
+  font-size: 1.25em;
+  min-height: 150px;
 }
