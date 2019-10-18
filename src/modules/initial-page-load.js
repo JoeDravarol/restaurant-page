@@ -1,4 +1,5 @@
 import { createElement } from './helpers'
+import { createHomeContent } from './home'
 
 const createHeader = () => {
   const header = createElement('header', { class: 'main-header' })
@@ -51,6 +52,7 @@ const setupInitialPage = () => {
   container.appendChild( createHeader() );
   container.appendChild(mainContainer);
   mainContainer.appendChild( createNavTab() );
+  mainContainer.appendChild( createHomeContent() );
 };
 
 export { setupInitialPage }
