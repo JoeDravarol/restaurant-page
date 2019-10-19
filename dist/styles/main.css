@@ -93,8 +93,22 @@ button {
   transform: rotate(180deg);
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
+  align-items: end;
+  margin-top: 20px;
+}
+
+.primary-nav__li {
+  border: 2px solid var(--light-brown);
+  border-left: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: .15px 0;
+  padding: 10px 5px;
+}
+
+.primary-nav__li--active {
+  padding: 10px;
 }
 
 /* Home */

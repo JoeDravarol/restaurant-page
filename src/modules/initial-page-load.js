@@ -22,7 +22,7 @@ const createNavTab = () => {
   let lis = [];
 
   for (let i = 0; i < 3; i++) {
-    lis[i] = document.createElement('li');
+    lis[i] = createElement('li', { class: 'primary-nav__li' })
     const a = createElement('a', { href: '#' });
 
     if (i === 0) {
