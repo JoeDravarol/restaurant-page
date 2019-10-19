@@ -22,18 +22,20 @@ const createNavTab = () => {
   let lis = [];
 
   for (let i = 0; i < 3; i++) {
-    lis[i] = createElement('li', { class: 'primary-nav__li' })
+    const li = createElement('li', { class: 'primary-nav__li' });
     const a = createElement('a', { href: '#' });
 
     if (i === 0) {
       a.textContent = 'Home';
+      li.classList.add('primary-nav__li--active');
     } else if (i === 1) {
       a.textContent = 'Menu';
     } else {
       a.textContent = 'Contact';
     }
 
-    lis[i].appendChild(a);
+    li.appendChild(a);
+    lis[i] = li;
   }
 
   lis.forEach( li => {
