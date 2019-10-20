@@ -232,3 +232,41 @@ button {
   font-size: 1.25em;
   min-height: 150px;
 }
+
+@media only screen and (min-width: 600px) {
+  .home {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home__image {
+    width: auto;
+    max-width: 80%;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .food-card {
+    height: 500px;
+    max-width: 350px;
+  }
+
+  .cafe-info {
+    margin: 0 auto;
+  }
+
+  .location,
+  .opening-hours,
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+};
