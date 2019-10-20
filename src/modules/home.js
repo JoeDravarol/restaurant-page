@@ -1,5 +1,17 @@
 import { createElement } from './helpers'
 
+const updateActiveTab = () => {
+  const currentActiveTab = document.querySelector('.primary-nav__li--active');
+  
+  // Remove current active tab
+  if (currentActiveTab) {
+    currentActiveTab.classList.remove('primary-nav__li--active');
+  };
+
+  // Update new active tab
+  document.querySelector('#home').classList.add('primary-nav__li--active');
+};
+
 const createHomeContent = () => {
   const section = createElement('section', { class: 'home' });
   const h2 = createElement('h2', { class: 'home__title' }, 'Welcome to the puuuuurfect paradise cafe!');
@@ -37,6 +49,8 @@ const createHomeContent = () => {
     };
     section.appendChild(p);
   });
+
+  updateActiveTab();
 
   return section;
 };

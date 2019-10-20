@@ -1,5 +1,12 @@
 import { createElement } from './helpers'
 
+const updateActiveTab = () => {
+  // Remove current active tab
+  document.querySelector('.primary-nav__li--active').classList.remove('primary-nav__li--active');
+  // Update new active tab
+  document.querySelector('#contact').classList.add('primary-nav__li--active');
+};
+
 const createLocationSection = () => {
   const section = createElement('section', { class: 'location' });
   const h3 = createElement('h3', { class: 'location__title' }, 'Location');
@@ -71,6 +78,8 @@ const createContactContent = () => {
   section.appendChild( createOpeningTimeSection() );
   section.appendChild( createContactFormSection() );
 
+  updateActiveTab();
+  
   return section;
 };
 

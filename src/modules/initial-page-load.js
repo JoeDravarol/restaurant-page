@@ -27,11 +27,13 @@ const createNavTab = () => {
 
     if (i === 0) {
       a.textContent = 'Home';
-      li.classList.add('primary-nav__li--active');
+      li.id = "home";
     } else if (i === 1) {
       a.textContent = 'Menu';
+      li.id = "menu";
     } else {
       a.textContent = 'Contact';
+      li.id = "contact";
     }
 
     li.appendChild(a);

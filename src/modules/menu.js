@@ -1,5 +1,12 @@
 import { createElement } from './helpers'
 
+const updateActiveTab = () => {
+  // Remove current active tab
+  document.querySelector('.primary-nav__li--active').classList.remove('primary-nav__li--active');
+  // Update new active tab
+  document.querySelector('#menu').classList.add('primary-nav__li--active');
+};
+
 const createFoodCard = (src, alt, h3Content, pContent) => {
   const foodCard = createElement('section', { class: 'food-card' });
   const img = createElement('img', { class: 'food-card__img', src, alt });
@@ -75,6 +82,8 @@ const createMenuContent = () => {
   menuItems.forEach( item => {
     section.appendChild(item);
   });
+
+  updateActiveTab();
 
   return section;
 };
